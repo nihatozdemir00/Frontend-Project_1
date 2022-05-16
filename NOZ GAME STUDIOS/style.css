@@ -1,0 +1,36 @@
+* { margin:0; padding:0;}
+
+body {background: url(./img/tentacle1.png); background-repeat:repeat-y; background-size: 100%;}
+header { display: flex; flex-direction: row; justify-content: space-around; padding-top: 15%;}
+.menu {padding-top: 70px;}
+.menu > ul {display: flex; justify-content: space-between;}
+#text {color: white; height: 200px; font-size: 30px; animation: animate 5s linear infinite;}
+@keyframes animate{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+span {position: absolute; transform-origin: 0 120px;}
+.btn {background-color: black; width:125px; height: 50px; color: white; border-color: white; border-radius: 30px; font-size: 20px; margin-right: 50px; margin-left: 50px;}
+td {color: white; width: 300px; font-size: 25px;} 
+section {display: flex; justify-content: center; align-items: center; margin-top: 100px;}
+h1 {font-size: 50px;}
+.inp {background-color: transparent; color: white; font-size: 15px; border-bottom: 2px solid; border-color: transparent; border-bottom-color: white;}
+#sendB {width: 100px; height: 30px;}
+#sendBtn {text-align: center;}
+#formOutput {color: white; font-size: 50px;}
+textarea {margin: 15px; color: black;}
+#btnHome {background-color: black; width:125px; height: 50px; color: white; border-color: white; border-radius: 30px; font-size: 20px; margin-right: 50px; margin-left: 50px;}
+#mobile {display: none;}
+
+/*Mobile Version*/
+@media screen and (max-width : 789px) {
+    header { display: flex; flex-direction: column; justify-content: space-around; padding-top: 15%;}
+    #text {color: white; height: 50px; font-size: 30px; animation: animate 0s linear infinite; text-align: center;}
+    .menu > ul {display: flex; flex-direction: column;}
+    #desktop {display: none;}
+    #mobile {display: flex;}
+    .menu {text-align: center;}
+    li {margin: 20px;}
+}
+    
+

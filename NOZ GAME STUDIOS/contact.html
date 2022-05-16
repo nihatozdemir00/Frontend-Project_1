@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOZ GAME STUDIOS</title>
+    <style>
+        body {background-image: url(./img/tentacle1.png); background-repeat: repeat-y; color: white; display: flex; justify-content: center; margin-left: 5%; margin-right: 5%; margin-top: 10%; font-size: 30px; background-size: 100%;}
+        img {width: 100%;}
+        table {display: flex;}
+        td {padding-left: 15px; padding-right: 15px;}
+        #btnHome {background-color: black; width:125px; height: 50px; color: white; border-color: white; border-radius: 30px; font-size: 20px; margin-right: 50px; margin-left: 50px;}
+        #mobile {display: none;}
+
+        /*Mobile Version*/
+        @media screen and (max-width: 789px) {
+            #desktop {display: none;}
+            #mobile {display: flex;}
+            #first {text-align: center;}
+            td {font-size:medium; text-align: center;}
+        }
+    </style>
+</head>
+<body>
+    <table id="desktop">
+        <tr>
+           <td><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12248.49324543725!2d32.7643243!3d39.8714757!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9d2a118fc1f84c3d!2sBilkent%20%C3%9Cniversitesi%20Bilgisayar%20Tkn.%20Ve%20Bili%C5%9Fim%20Sistemleri!5e0!3m2!1str!2str!4v1649052649728!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+           <td><a href="./index.html"><input type="button" value="HOME" id="btnHome"></a><span><br><br><br></span>&#128205; Üniversiteler Mah, İhsan Doğramacı Blv No:17,<span><br></span> 06800 Çankaya/Ankara <span><br><br></span> &#128231; nihat.ozdemir@ug.bilkent.edu.tr <span><br><br></span> &phone; 542 601 42 48</td>
+        </tr>
+    </table>
+    <table id="mobile">
+        <tr id="first">
+            <td><a href="./index.html"><input type="button" value="HOME" id="btnHome"></a></td>
+        </tr>
+        <tr>
+            <td><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12248.49324543725!2d32.7643243!3d39.8714757!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9d2a118fc1f84c3d!2sBilkent%20%C3%9Cniversitesi%20Bilgisayar%20Tkn.%20Ve%20Bili%C5%9Fim%20Sistemleri!5e0!3m2!1str!2str!4v1649052649728!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+        </tr>
+        <tr>
+            <td><span><br><br><br></span>&#128205; Üniversiteler Mah, İhsan Doğramacı Blv No:17,<span><br></span> 06800 Çankaya/Ankara <span><br><br></span> &#128231; nihat.ozdemir@ug.bilkent.edu.tr <span><br><br></span> &phone; 542 601 42 48</td>
+        </tr>
+    </table>
+</body>
+</html>

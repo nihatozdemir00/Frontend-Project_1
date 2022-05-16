@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOZ GAME STUDIOS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <form name="myForm">
+            <table>
+                <tr>
+                    <td><a href="./index.html"><input type="button" value="HOME" id="btnHome"></td>
+                </tr>
+                <tr>
+                    <td><h1>Let us know how we can help you</h1></td>
+                    <td>
+                        <table id="inner">
+                            <tr>
+                                <td>First name:</td>
+                                <td>Last name:</td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" class="inp" name="firstName"></td>
+                                <td><input type="text" class="inp" name="lastName"></td>
+                            </tr>
+                            <tr>
+                                <td>Email address:</td>
+                                <td>Country:</td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" class="inp" name="email"></td>
+                                <td><input type="text" class="inp" name="country"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Message:</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><textarea name="msg" cols="43" rows="8" class="inp"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" id="sendBtn"><input type="submit" value="SEND" id="sendB" class="btn" onclick="show()"></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <table>
+                        <tr>
+                            <td>
+                                <textarea name="info" id="" cols="100" rows="10"></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </tr>
+            </table>
+
+            <script>
+                function show(){
+                    var form = document.forms['myForm'];
+                    form.onsubmit = function(e){
+                        e.preventDefault();
+                        output = "";
+                        var firstName = myForm.firstName.value;
+                        var lastName = myForm.lastName.value;
+                        var email = myForm.email.value;
+                        var country = myForm.country.value;
+                        output += "Hello my name is " + firstName + " " +lastName + ". I am from " + country + ".\n" ;
+                        output += "You can contact me from => " + email ;
+                        output += "\nMy message is => " + myForm.msg.value ;
+                        myForm.info.value = output;
+                    }
+                }
+            </script>
+        </form>
+    </section>
+</body>
+</html>

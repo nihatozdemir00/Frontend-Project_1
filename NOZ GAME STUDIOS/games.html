@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOZ GAME STUDIOS</title>
+    <style>
+        body {background-image:url(./img/tentacle1.png); background-repeat: repeat-y; color: white; display: flex; justify-content: center; align-items: center; background-size: 100%; flex-direction:column;}
+        a {display: flex; justify-content: space-around; align-items: center; margin-top: 10%;}
+        div {display: flex; justify-content: space-around; align-items: center; margin-top: 5%;}
+        #btnHome {background-color: black; width:125px; height: 50px; color: white; border-color: white; border-radius: 30px; font-size: 20px; margin-right: 50px; margin-left: 50px; margin-bottom: 50px;}
+        h3 {border: 2px solid white; padding: 8px;}
+        p {color: black;}
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      $( function() {
+        $( "#accordion" ).accordion();
+      } );
+      </script>
+</head>
+<body>
+
+    <a href="./index.html"><input type="button" value="HOME" id="btnHome"></a>
+
+      <div id="accordion">
+        <h3>Div Puzzle</h3>
+        <div class="card small">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="img/gameimg.png">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4"><i class="material-icons right"></i></span>
+            <p><a href="game.html">PLAY</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Description<i class="material-icons right">close</i></span>
+            <p>Div Puzzle is a mini game based on clicking random squares as fast as possible!</p>
+          </div>
+        </div>
+        <h3>Pro Driver</h3>
+        <div>
+          <img src="./img/soon.jpg" alt="">
+        </div>
+        <h3>Shooting Range</h3>
+        <div>
+          <img src="./img/soon.jpg" alt="">
+        </div>
+      </div>
+
+</body>
+</html>
